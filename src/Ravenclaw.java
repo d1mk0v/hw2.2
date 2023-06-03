@@ -43,4 +43,15 @@ public class Ravenclaw extends Hogwarts {
     public void setCreation(int creation) {
         this.creation = creation;
     }
+
+    public void printRavenclawStudent() {
+        System.out.println("Студент - " + getName()
+                + ", магия - " + getMagic()
+                + ", трансгрессия - " + getTransgression()
+                +", ум - " + getIntellect()
+                + ", мудрость - " + getWisdom()
+                + ", остроумие - " + getWit()
+                + ", творчество - " + getCreation()
+        );
+    }
 }
