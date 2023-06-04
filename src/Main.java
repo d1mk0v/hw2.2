@@ -70,5 +70,8 @@ public class Main {
         grahamMontague.compareStudentsOfFaculty(gregoryGoyle);
 
         System.out.println();
+
+        Hogwarts.compareByMagic(hermioneGranger, gregoryGoyle);
+        Hogwarts.compareBytransgression(grahamMontague, padmaPatil);
     }
 }

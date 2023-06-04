@@ -28,4 +28,23 @@ public class Hogwarts {
         this.transgression = transgression;
     }
 
+    public static void compareByMagic(Hogwarts student1, Hogwarts student2) {
+        if (student1.getMagic() > student2.getMagic()) {
+            System.out.println(student1.getName() + " сильнее в магии, чем " + student2.getName());
+        } else if (student2.getMagic() > student1.getMagic()) {
+            System.out.println(student2.getName() + " сильнее в магии, чем " + student1.getName());
+        } else {
+            System.out.println(student1.getName() + " и " + student2.getName() + " равны в магии");
+        }
+    }
+
+    public static void compareBytransgression(Hogwarts student1, Hogwarts student2) {
+        if (student1.getTransgression() > student2.getTransgression()) {
+            System.out.println(student1.getName() + " сильнее в трангрессии, чем " + student2.getName());
+        } else if (student2.getTransgression() > student1.getTransgression()) {
+            System.out.println(student2.getName() + " сильнее в трангрессии, чем " + student1.getName());
+        } else {
+            System.out.println(student1.getName() + " и " + student2.getName() + " равны в трангрессии");
+        }
+    }
 }
