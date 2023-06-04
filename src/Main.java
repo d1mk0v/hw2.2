@@ -37,9 +37,11 @@
 //    Например, Драко Малфой обладает бОльшей мощностью магии, чем Захария Смит.
 public class Main {
     public static void main(String[] args) {
+        System.out.println();
         System.out.println("Домашка 2.2");
+        System.out.println();
 
-        Gryffindor harryPotter = new Gryffindor("Гарри Поттер", 77, 53, 64, 25, 57);
+        Gryffindor harryPotter = new Gryffindor("Гарри Поттер", 77, 53, 64, 85, 57);
         Gryffindor hermioneGranger = new Gryffindor("Гермиона Грейнджер", 70, 58, 68, 75, 58);
         Gryffindor ronWeasley = new Gryffindor("Рон Уизли", 40, 59, 56, 57, 36);
 
@@ -59,5 +61,10 @@ public class Main {
         zachariasSmith.printHufflepuffStudent();
         choChang.printRavenclawStudent();
         dracoMalfoy.printSlytherinStudent();
+
+        System.out.println();
+
+        hermioneGranger.compareStudentsOfFaculty(ronWeasley);
+        cedricDiggory.compareStudentsOfFaculty(justinFinchFletchley);
     }
 }
