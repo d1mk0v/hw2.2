@@ -66,5 +66,9 @@ public class Main {
 
         hermioneGranger.compareStudentsOfFaculty(ronWeasley);
         cedricDiggory.compareStudentsOfFaculty(justinFinchFletchley);
+        padmaPatil.compareStudentsOfFaculty(marcusBelby);
+        grahamMontague.compareStudentsOfFaculty(gregoryGoyle);
+
+        System.out.println();
     }
 }
