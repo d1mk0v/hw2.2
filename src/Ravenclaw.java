@@ -55,7 +55,7 @@ public class Ravenclaw extends Hogwarts {
         );
     }
 
-    public int compareStudentsOfFaculty(Ravenclaw student) {
+    public void compareStudentsOfFaculty(Ravenclaw student) {
         int score1 = this.getMagic() + this.getTransgression() + this.getIntellect()
                 + this.getWisdom() + this.getWit() + this.getCreation();
         int score2 = student.getMagic() + student.getTransgression() + student.getIntellect()
@@ -68,6 +68,5 @@ public class Ravenclaw extends Hogwarts {
         } else {
             System.out.println(student.getName() + " лучше, чем " + this.getName());
         }
-        return score1;
     }
 }

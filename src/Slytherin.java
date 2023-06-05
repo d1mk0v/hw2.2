@@ -66,7 +66,7 @@ public class Slytherin extends Hogwarts{
         );
     }
 
-    public int compareStudentsOfFaculty(Slytherin student) {
+    public void compareStudentsOfFaculty(Slytherin student) {
         int score1 = this.getMagic() + this.getTransgression() + this.getCunning()
                 + this.getDetermination() + this.getAmbition() + this.getResourcefulness() + this.getLustForPower();
         int score2 = student.getMagic() + student.getTransgression() + student.getCunning()
@@ -79,6 +79,5 @@ public class Slytherin extends Hogwarts{
         } else {
             System.out.println(student.getName() + " лучше, чем " + this.getName());
         }
-        return score1;
     }
 }

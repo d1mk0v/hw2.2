@@ -44,7 +44,7 @@ public class Gryffindor extends Hogwarts{
         );
     }
 
-    public int compareStudentsOfFaculty(Gryffindor student) {
+    public void compareStudentsOfFaculty(Gryffindor student) {
         int score1 = this.getMagic() + this.getTransgression() + this.getNobility()
                 + this.getHonor() + this.getBravery();
         int score2 = student.getMagic() + student.getTransgression() + student.getNobility()
@@ -57,6 +57,5 @@ public class Gryffindor extends Hogwarts{
         } else {
             System.out.println(student.getName() + " лучше, чем " + this.getName());
         }
-        return score1;
     }
 }

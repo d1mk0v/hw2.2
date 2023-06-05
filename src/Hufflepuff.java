@@ -45,7 +45,7 @@ public class Hufflepuff extends Hogwarts{
         );
     }
 
-    public int compareStudentsOfFaculty(Hufflepuff student) {
+    public void compareStudentsOfFaculty(Hufflepuff student) {
         int score1 = this.getMagic() + this.getTransgression() + this.getIndustriousness()
                 + this.getLoyalty() + this.getHonesty();
         int score2 = student.getMagic() + student.getTransgression() + student.getIndustriousness()
@@ -58,6 +58,5 @@ public class Hufflepuff extends Hogwarts{
         } else {
             System.out.println(student.getName() + " лучше, чем " + this.getName());
         }
-        return score1;
     }
 }
